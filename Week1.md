@@ -2,13 +2,13 @@
 #### Sitting in CSE 15L and struggling to remotely connect? I've got you covered.
 
 ## Step 1: Install Visual Studio (VS) Code
-#### If you previously took a CSE course here at UC San Diego (e.g. CSE 11), you most likely already have VS code installed (I did). If not, [download](https://code.visualstudio.com/download) and follow the onscreen instructions to download for your specific operating system. If everything goes to plan, you'll end up with something similar to this:
+#### If you previously took a CSE course here at UC San Diego (e.g. CSE 11), you most likely already have VS code installed (I did). If not, navigate to https://code.visualstudio.com/download and follow the onscreen instructions to download for your specific operating system. If everything goes to plan, you'll end up with something similar to this:
 
 ![image](https://user-images.githubusercontent.com/54877475/212776819-7b28b961-6d9d-4d51-9cd1-de0c566be2b2.png)
 
 ## Step 2: Connect to the Remote Server
 #### From here on, my instructions will be more helpful for Windows users since I use a Windows operating system. 
-#### Firstly, I needed to install [Git](https://www.atlassian.com/git/tutorials/install-git#windows). Make sure you enable the setting that allows you to use Git Bash *NOT FROM THE COMMAND PROMPT*. Then open up VS code and on the top left corner, click "Terminal" and then "New Terminal." You'll see it open up along the bottom of your screen: 
+#### Firstly, I needed to install Git at https://www.atlassian.com/git/tutorials/install-git#windows. Make sure you enable the setting that allows you to use Git Bash *NOT FROM THE COMMAND PROMPT*. Then open up VS code and on the top left corner, click "Terminal" and then "New Terminal." You'll see it open up along the bottom of your screen: 
 ![image](https://user-images.githubusercontent.com/54877475/212778116-e5304e88-d810-4d80-83de-748e643332ad.png)
 
 #### Now, on the top right corner of the terminal you'll see a down arrow next to "powershell" and the plus sign. Hit this arrow and select "Git Bash." You're now ready to enter some commands!
