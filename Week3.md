@@ -16,3 +16,26 @@
 ![image](https://user-images.githubusercontent.com/54877475/215658939-68ae9621-318e-4ed1-9a26-d86d0d6976c4.png)
 
 ##### The same steps outlined previously are executed for this test case. The key difference is changing the URL input after `=` alters `query[1]` to contain `Politz` which as a result updates `output` to `Politz\n`.
+
+## Part 2:
+
+##### Upon testing the `reverseInPlace` method in the `ArrayExamples` class, one quickly finds bugs. For instance, the following JUnit test fails:`
+
+```
+@Test 
+public void testReverseInPlace() {
+  int[] input1 = {3, 4, 5};
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{5, 4, 3}, input1);
+}
+```
+##### However, some tests do pass:
+
+```
+@Test 
+public void testReverseInPlace() {
+  int[] input2 = {3};
+  ArrayExamples.reverseInPlace(input2);
+  assertArrayEquals(new int[]{3}, input2);
+}
+```
