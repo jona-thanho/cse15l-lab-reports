@@ -50,7 +50,7 @@ $ grep -c "and" written_2/travel_guides/berlitz2/Paris*.txt
 written_2/travel_guides/berlitz2/Paris-WhatToDo.txt:30
 written_2/travel_guides/berlitz2/Paris-WhereToGo.txt:139
 ```
-#### What happens here is the `c` option outputs the number of occurences (`30` and `139` in their respective files) of string `and` in `written_2/travel_guides/berlitz2/Paris*.txt`.
+#### What happens here is the `c` option outputs the number of occurences of string `and` in `written_2/travel_guides/berlitz2/Paris*.txt` (`30` and `139` in their respective files).
 
 #### Another instance is:
 ```
