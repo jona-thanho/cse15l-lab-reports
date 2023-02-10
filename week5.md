@@ -59,11 +59,11 @@ written_2/travel_guides/berlitz2/Portugal-History.txt:0
 written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt:0
 written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt:0
 ```
-#### Joe, if you're reading this, don't be sad. I'm sure Portugal has nothing against you. Anyway...searching for string `Joe` in `written_2/travel_guides/berlitz2/Portugal*.txt` shows that `Joe` is nowhere to be found (`0`, `0`, and `0` occurences). All in all we see that this command could be used for finding a word/character count (I know there's a separate command for that, but that's beyond the scope of this article).
+#### Joe, if you're reading this, don't be sad. I'm sure Portugal has nothing against you. Anyway... searching for string `Joe` in `written_2/travel_guides/berlitz2/Portugal*.txt` shows that `Joe` is nowhere to be found (`0`, `0`, and `0` occurences). All in all we see that this command could be used for finding a word/character count (I know there's a separate command for that, but that's beyond the scope of this article).
 
 ###### *Source: [GeeksforGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)*
 
-## 4. `grep -ric "string to search" /path/to/file/`
+## 4. `grep -ic "string to search" /path/to/file/`
 #### Here I'm focusing on the `i` option:
 ```
 $ grep -ic "spanish" written_2/travel_guides/berlitz2/PuertoRico-*.txt
@@ -73,7 +73,7 @@ written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt:20
 ```
 #### Using `c` with `i` helps highlight the functionality of `i`, which is to ignore letter case. In this example we see that in `written_2/travel_guides/berlitz2/PuertoRico-*.txt`, string `spanish` (and any case variation of it) is found `12`, `8`, and `20` times in the respective text files.
 
-#### We can see it more clearly when `i` is removed:
+#### It becomes more clear when `i` is removed:
 ```
 $ grep -c "spanish" written_2/travel_guides/berlitz2/PuertoRico-*.txt
 written_2/travel_guides/berlitz2/PuertoRico-History.txt:0
