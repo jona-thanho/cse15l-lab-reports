@@ -21,7 +21,7 @@ written_2/travel_guides/berlitz2/Paris-WhereToGo.txt
 $ grep -rl "pasta" written_2/travel_guides/berlitz2/                
 written_2/travel_guides/berlitz2/Boston-WhereToGo.txt
 ```
-#### We see that `grep` searches all files within `written_2/travel_guides/berlitz2/` for the string `pasta`, resulting in one file found. From these two examples, we see that this command is useful when we want to know the file name/path in which a specific string is located.
+#### We see that `grep` searches all files within `written_2/travel_guides/berlitz2/` for the string `pasta`, resulting in one file found. From these two examples, we see that this command is useful when we want to know the file name/path to locate a specific string.
 
 ###### *Source: https://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-string-on-linux*
 
@@ -63,4 +63,23 @@ written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt:0
 
 ###### *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
 
-## 4. `grep`
+## 4. `grep -ric "string to search" /path/to/file/`
+#### Here I'm focusing on the `i` option:
+```
+$ grep -ic "spanish" written_2/travel_guides/berlitz2/PuertoRico-*.txt
+written_2/travel_guides/berlitz2/PuertoRico-History.txt:12
+written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt:8
+written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt:20
+```
+#### Using `c` with `i` helps highlight the functionality of `i`, which is to ignore letter case. In this example we see that in `written_2/travel_guides/berlitz2/PuertoRico-*.txt`, string `spanish` (and any case variation of it) is found `12`, `8`, and `20` times in the respective text files.
+
+#### We can see it more clearly when `i` is removed:
+```
+$ grep -c "spanish" written_2/travel_guides/berlitz2/PuertoRico-*.txt
+written_2/travel_guides/berlitz2/PuertoRico-History.txt:0
+written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt:0
+written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt:0
+```
+#### Without `i`, only string `spanish` with no other case variation is found in the same files (found `0`, `0`, and `0` times). This means that in the specified files, all instances of the word `spanish` contained some capitalization. From this, we see that `i` is useful for searching operations when only the word is needed, regardless of capitlization.
+
+###### *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
