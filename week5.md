@@ -83,3 +83,5 @@ written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt:0
 #### Without `i`, only string `spanish` with no other case variation is found in the same files (found `0`, `0`, and `0` times). This means that in the specified files, all instances of the word `spanish` contained some capitalization. From this, we see that `i` is useful for searching operations when only the word is needed, regardless of capitlization.
 
 ###### *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
+
+### That's it! Hope you have a great time with `grep`.
