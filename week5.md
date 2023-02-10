@@ -23,7 +23,7 @@ written_2/travel_guides/berlitz2/Boston-WhereToGo.txt
 ```
 #### We see that `grep` searches all files within `written_2/travel_guides/berlitz2/` for the string `pasta`, resulting in one file found. From these two examples, we see that this command is useful when we want to know the file name/path to locate a specific string.
 
-###### *Source: https://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-string-on-linux*
+###### *Source: [https://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-string-on-linux](https://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-string-on-linux)*
 
 ## 2. `grep -rn "string to search" /path/to/file/`
 #### This is how it works, using the previous string and file path for comparison:
@@ -41,7 +41,7 @@ written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:142:The mountain areas s
 ```
 #### Again, the two line numbers and their associated text are outputted to the terminal. We see that this command is useful for when you want to view the surrounding text of a specific keyword (i.e. gain context) or know the line number of that keyword.
 
-###### *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
+###### *Source: [https://www.geeksforgeeks.org/grep-command-in-unixlinux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)*
 
 ## 3. `grep -c "string to search" /path/to/file/`.
 #### This is how you use it:
@@ -61,7 +61,7 @@ written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt:0
 ```
 #### Joe, if you're reading this, don't be sad. I'm sure Portugal has nothing against you. Anyway...searching for string `Joe` in `written_2/travel_guides/berlitz2/Portugal*.txt` shows that `Joe` is nowhere to be found (`0`, `0`, and `0` occurences). All in all we see that this command could be used for finding a word/character count (I know there's a separate command for that, but that's beyond the scope of this article).
 
-###### *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
+###### *Source: [https://www.geeksforgeeks.org/grep-command-in-unixlinux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)*
 
 ## 4. `grep -ric "string to search" /path/to/file/`
 #### Here I'm focusing on the `i` option:
@@ -82,6 +82,6 @@ written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt:0
 ```
 #### Without `i`, only string `spanish` with no other case variation is found in the same files (found `0`, `0`, and `0` times). This means that in the specified files, all instances of the word `spanish` contained some capitalization. From this, we see that `i` is useful for searching operations when only the word is needed, regardless of capitlization.
 
-###### *Source: https://www.geeksforgeeks.org/grep-command-in-unixlinux/*
+###### *Source: [https://www.geeksforgeeks.org/grep-command-in-unixlinux](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)*
 
 ### That's it! Hope you have a great time with `grep`.
