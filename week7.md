@@ -29,8 +29,8 @@
 #### Line 3 - `<ctrl r>`, java, `<space>`, `<enter>`
 
 #### In line 1, I typed *cd l* and pressed `<tab>` to autocomplete the `lab7` directory name. I hit `<enter>` to run the resulting command.
-#### In line 2, I used `<ctrl r>` (Yes, again! Very useful.) and typed *javac* to find my previously run `javac` command, pressing `<enter>` to run that command.
-#### For line 3, `<ctrl r>` was used with keyword *java* along with one `<space>` to find the `java` command. Without `<space>`, the `javac` command is found instead. `<enter>` then ran this line.
+#### In line 2, I used `<ctrl r>` and typed *javac* to find my previously run `javac` command, pressing `<enter>` to run it.
+#### For line 3, `<ctrl r>` (yes, again! very useful) was used with keyword *java* along with one `<space>` to find the `java` command. Without `<space>`, the `javac` command is found instead. `<enter>` then ran this line.
 
 ## 4. "Edit the code file to fix the failing test"
 
@@ -38,7 +38,7 @@
 
 ### Keys pressed: `<ctrl r>`, nan, `<enter>`, `<ctrl shift ->`, 43, `<enter>`, `<right arrow>` *(12 times)*, `<backspace>`, 2, `<ctrl o>`, `<enter>`, `<ctrl x>`
 
-#### All that for a tiny line of code? Yep, lots of behind the scenes stuff. `<ctrl r>`, *nan*, and `<enter>` are used to locate and run the `nano` command. Once inside the nano editor, I used `<ctrl shift ->` and typed *43* to move my cursor to the beginning of line 43 in `ListExamples.java`, which is where the bug is located. I then hit the `<right arrow>` 12 times to move my cursor right after variable `index1` and hit `<backspace>` and *2* to change it to `index2`. With the bug fixed, I use `<ctrl o>` and `<enter>` to save my changes and `<ctrl x>` to exit the nano editor.
+#### All that for a tiny line of code? Yep, lots of behind the scenes stuff. `<ctrl r>`, *nan*, and `<enter>` are used to locate and run the `nano` command. Once inside the nano editor, I used `<ctrl shift ->` and typed *43* to move my cursor to the beginning of line 43 in `ListExamples.java`, which is where the bug is located. I then hit the `<right arrow>` 12 times to move my cursor right after variable `index1` and hit `<backspace>` and *2* to change it to `index2`. With the bug fixed, I used `<ctrl o>` and `<enter>` to save my changes and `<ctrl x>` to exit the nano editor.
 
 ## 5. "Run the tests, demonstrating that they now succeed"
 
