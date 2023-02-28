@@ -56,8 +56,8 @@
 ![image](https://user-images.githubusercontent.com/54877475/221739492-090c0a67-d8d1-4912-97bd-a676747e436a.png)
 
 ### Keys pressed:
-#### Command 1 `git add .` - git, `<space>`, add, `<space>`, ., `<enter>`
-#### Command 2 `git commit -m "ok"` - git, `<space>`, commit, `<space>`, -m, `<space>`, "ok", `<enter>`
-#### Command 3 `git push` -git, `<space>`, push, `<enter>`
+#### Command 1 (`git add .`) - git, `<space>`, add, `<space>`, ., `<enter>`
+#### Command 2 (`git commit -m "ok"`) - git, `<space>`, commit, `<space>`, -m, `<space>`, "ok", `<enter>`
+#### Command 3 (`git push`) - git, `<space>`, push, `<enter>`
 
 #### For these last 3, I just typed them out manually. I definitely could've saved a few keystrokes by using `<ctrl r>`, but for some reason I decided not to. It's probably because I was already so used to typing them manually, way before I learned about `<ctrl r>`. It's hard to break old habits :')
