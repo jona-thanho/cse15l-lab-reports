@@ -21,7 +21,7 @@ written_2/travel_guides/berlitz2/Paris-WhereToGo.txt
 $ grep -rl "pasta" written_2/travel_guides/berlitz2/                
 written_2/travel_guides/berlitz2/Boston-WhereToGo.txt
 ```
-#### We see that `grep` searches all files within `written_2/travel_guides/berlitz2/` for the string `pasta`, resulting in one file found. From these two examples, we see that this command is useful when we want to know the file name/path to locate a specific string.
+#### We see that `grep` searches all files within `written_2/travel_guides/berlitz2/` for the string `pasta`, resulting in one file found. We see that `r` is useful when we would like to not only search in one directory but also its subdirectories (expanding our scope), and `l` is useful when we want to know the file name/path (and nothing else) in which a specific string is located.
 
 ###### *Source: [Stack Overflow](https://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-string-on-linux)*
 
@@ -39,7 +39,7 @@ $ grep -rn "18.5 miles" written_2/
 written_2/travel_guides/berlitz1/WhereToJapan.txt:1291:Miho Museum. Some 30 km (18.5 miles) outside Kyoto, set
 written_2/travel_guides/berlitz2/Vallarta-WhereToGo.txt:142:The mountain areas surrounding the Capalita River are also the site of many natural treasures, including the Capalitilla Cascades. About 30 km (18.5 miles) north of Tangolunda a grouping of waterfalls, with heights averaging 25 m (80 feet) form natural Jacuzzis and clear pools for swimming. The area is also popular for horseback riding and rappelling.
 ```
-#### Again, the two line numbers and their associated text are outputted to the terminal. We see that this command is useful for when you want to view the surrounding text of a specific keyword (i.e. gain context) or know the line number of that keyword.
+#### Again, the two line numbers and their associated text are outputted to the terminal. We see that `r` is useful for a broad search of a directory and its subdirectories and that `n` is useful for when you want to view the surrounding text of a specific keyword (i.e. gain context), know the line number of that keyword, or find the file/path name in which that keyword is located.
 
 ###### *Source: [GeeksforGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)*
 
@@ -59,7 +59,7 @@ written_2/travel_guides/berlitz2/Portugal-History.txt:0
 written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt:0
 written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt:0
 ```
-#### Joe, if you're reading this, don't be sad. I'm sure Portugal has nothing against you. Anyway... searching for string `Joe` in `written_2/travel_guides/berlitz2/Portugal*.txt` shows that `Joe` is nowhere to be found (`0`, `0`, and `0` occurences). All in all we see that this command could be used for finding a word/character count (I know there's a separate command for that, but that's beyond the scope of this article).
+#### Joe, if you're reading this, don't be sad. I'm sure Portugal has nothing against you. Anyway... searching for string `Joe` in `written_2/travel_guides/berlitz2/Portugal*.txt` shows that `Joe` is nowhere to be found (`0`, `0`, and `0` occurences). All in all we see that `c` could be useful for finding a word/character count (I know there's a separate command for that, but that's beyond the scope of this article) or if that word/character exists.
 
 ###### *Source: [GeeksforGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)*
 
@@ -71,7 +71,7 @@ written_2/travel_guides/berlitz2/PuertoRico-History.txt:12
 written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt:8
 written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt:20
 ```
-#### Using `c` with `i` helps highlight the functionality of `i`, which is to ignore letter case. In this example we see that in `written_2/travel_guides/berlitz2/PuertoRico-*.txt`, string `spanish` (and any case variation of it) is found `12`, `8`, and `20` times in the respective text files.
+#### Using `c` (described previously) with `i` helps highlight the functionality of `i`, which is to ignore letter case. In this example we see that in `written_2/travel_guides/berlitz2/PuertoRico-*.txt`, string `spanish` (and any case variation of it) is found `12`, `8`, and `20` times in the respective text files.
 
 #### It becomes more clear when `i` is removed:
 ```
@@ -80,7 +80,7 @@ written_2/travel_guides/berlitz2/PuertoRico-History.txt:0
 written_2/travel_guides/berlitz2/PuertoRico-WhatToDo.txt:0
 written_2/travel_guides/berlitz2/PuertoRico-WhereToGo.txt:0
 ```
-#### Without `i`, only string `spanish` with no other case variation is found in the same files (found `0`, `0`, and `0` times). This means that in the specified files, all instances of the word `spanish` contained some capitalization. From this, we see that `i` is useful for searching operations when only the word is needed, regardless of capitlization.
+#### Without `i`, only string `spanish` with no other case variation is found in the same files (found `0`, `0`, and `0` times). This means that in the specified files, all instances of the word `spanish` contained some capitalization. From this, we see that `i` is useful for searching operations when only the word is needed, regardless of capitalization.
 
 ###### *Source: [GeeksforGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)*
 
