@@ -21,7 +21,7 @@ written_2/travel_guides/berlitz2/Paris-WhereToGo.txt
 $ grep -rl "pasta" written_2/travel_guides/berlitz2/                
 written_2/travel_guides/berlitz2/Boston-WhereToGo.txt
 ```
-#### We see that `grep` searches all files within `written_2/travel_guides/berlitz2/` for the string `pasta`, resulting in one file found. We see that `r` is useful when we would like to not only search in one directory but also its subdirectories (expanding our scope), and `l` is useful when we want to know the file name/path (and nothing else) in which a specific string is located.
+#### We see that `grep` searches all files within `written_2/travel_guides/berlitz2/` for the string `pasta`, resulting in one file found. `r` is useful when we would like to not only search in one directory but also its subdirectories (expanding our scope), and `l` is useful when we want to know the file name/path (and nothing else) in which a specific string is located.
 
 ###### *Source: [Stack Overflow](https://stackoverflow.com/questions/16956810/how-to-find-all-files-containing-specific-text-string-on-linux)*
 
@@ -59,7 +59,7 @@ written_2/travel_guides/berlitz2/Portugal-History.txt:0
 written_2/travel_guides/berlitz2/Portugal-WhatToDo.txt:0
 written_2/travel_guides/berlitz2/Portugal-WhereToGo.txt:0
 ```
-#### Joe, if you're reading this, don't be sad. I'm sure Portugal has nothing against you. Anyway... searching for string `Joe` in `written_2/travel_guides/berlitz2/Portugal*.txt` shows that `Joe` is nowhere to be found (`0`, `0`, and `0` occurences). All in all we see that `c` could be useful for finding a word/character count (I know there's a separate command for that, but that's beyond the scope of this article) or if that word/character exists.
+#### Joe, if you're reading this, don't be sad. I'm sure Portugal has nothing against you. Anyway... searching for string `Joe` in `written_2/travel_guides/berlitz2/Portugal*.txt` shows that `Joe` is nowhere to be found (`0`, `0`, and `0` occurences). All in all we see that `c` could be useful for finding a word/character count (I know there's a separate command for that, but that's beyond the scope of this article) or finding out if that word/character exists.
 
 ###### *Source: [GeeksforGeeks](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)*
 
