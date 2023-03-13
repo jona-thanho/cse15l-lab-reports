@@ -32,11 +32,17 @@ git push
 
 #### Each line is the same command I ran when completing the tasks without a bash script, except for step 4's `sed -i '43s/.*/      index2 += 1;/' ListExamples.java`, which I had to [research](https://stackoverflow.com/questions/11145270/how-to-replace-an-entire-line-in-a-text-file-by-line-number) specfically to make this script work. Essentially, this command replaces line `43` in `ListExamples.java` with `      index2 += 1;` (extra spaces for consistent indentation). It's important to note that this command works even when completing the tasks without a bash script. Looking back, it would've saved me many, many keystrokes as opposed to using `nano` and manually editing `ListExamples.java`.
 
+#### All you need to do now is run `bash cldq.sh` and sit back and relax: 
 
->#### But wait, if we're using a bash script, can't we just put all the commands in the script, reducing the required steps to only one?
+![image](https://user-images.githubusercontent.com/54877475/224852151-2d2c8e33-6622-4d4e-b481-950dd468ae92.png)
 
-#### Good question! Unfortunately, the bash script (see next steps for full script) failed to execute completely when I included `ssh cs15lwi23aps@ieng6.ucsd.edu` in the first line of the script:
+#### Here you see all the correct output, just in a different format. Everything is now condensed together which can be confusing to read, but try drawing imaginary lines where each command would be originally.
+
+## But wait...
+>### If we're using a bash script, can't we also include step 1 in the script, reducing the required steps to only one?
+
+#### Good question! Unfortunately, the script failed to execute completely when I included `ssh cs15lwi23aps@ieng6.ucsd.edu` in the first line of the script:
 
 ![image](https://user-images.githubusercontent.com/54877475/224846135-d1874192-f3bb-496e-a67e-d9b1aeaffe7b.png)
 
-#### As you can see, the script (`cldq.sh`) stops running after it logs into the remote. It's a weird behavior that I was not able to figure out. Anyway, 
+#### As you can see, `cldq.sh` stops running after it logs into the remote. It's a weird behavior that I was not able to figure out. But hey, the steps outlined above will already give you a world-class time. Best of luck :)
