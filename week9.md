@@ -30,7 +30,7 @@ git commit -m "Changed line 43"
 git push
 ```
 
-#### I included comments (the `#`s) to help explain my code. Each line is the same command I ran when completing the tasks without a bash script, except for step 4's `sed -i '43s/.*/      index2 += 1;/' ListExamples.java`, which I had to [research](https://stackoverflow.com/questions/11145270/how-to-replace-an-entire-line-in-a-text-file-by-line-number) specfically to make this script work. Essentially, this command replaces line `43` in `ListExamples.java` with `______index2 += 1;` (underscores represent the extra spaces shown above to create consistent indentation). It's important to note that this command works even when completing the tasks without a bash script. Looking back, it would've saved me many, many keystrokes as opposed to using `nano` and manually editing `ListExamples.java`.
+#### I included comments (the `#`s) to help explain my code. Each line is the same command I ran when completing the tasks without a bash script, except for step 4's `sed -i '43s/.*/(6 spaces here)index2 += 1;/' ListExamples.java`, which I had to [research](https://stackoverflow.com/questions/11145270/how-to-replace-an-entire-line-in-a-text-file-by-line-number) specfically to make this script work. Essentially, this command replaces line `43` in `ListExamples.java` with `(6 spaces here)index2 += 1;` (the spaces create consistent indentation in the `while` loop). It's important to note that this command works even when completing the tasks without a bash script. Looking back, it would've saved me many, many keystrokes as opposed to using `nano` and manually editing `ListExamples.java`.
 
 #### All you need to do now is run `bash cldq.sh` and sit back and relax: 
 
