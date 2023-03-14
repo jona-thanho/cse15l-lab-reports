@@ -1,5 +1,5 @@
 # Week 9 Lab Report
-### You read my last lab report on how to get a pretty fast *CSE Labs “Done Quick”* time (hopefully), but you want more. You want it EVEN FASTER. Lucky for you, you're in the right place. This article will show you how to utilize a bash script to complete the tasks in TWO lines (yes, you read that right).
+#### You read my last lab report on how to get a pretty fast *CSE Labs “Done Quick”* time (hopefully), but you want more. You want it EVEN FASTER. Lucky for you, you're in the right place. This article will show you how to utilize a bash script to complete the tasks in TWO lines (yes, you read that right).
 
 ## Step 1. "Log into ieng6" the old-fashioned way
 
@@ -30,7 +30,7 @@ git commit -m "Changed line 43"
 git push
 ```
 
-#### Each line is the same command I ran when completing the tasks without a bash script, except for step 4's `sed -i '43s/.*/      index2 += 1;/' ListExamples.java`, which I had to [research](https://stackoverflow.com/questions/11145270/how-to-replace-an-entire-line-in-a-text-file-by-line-number) specfically to make this script work. Essentially, this command replaces line `43` in `ListExamples.java` with `      index2 += 1;` (extra spaces for consistent indentation). It's important to note that this command works even when completing the tasks without a bash script. Looking back, it would've saved me many, many keystrokes as opposed to using `nano` and manually editing `ListExamples.java`.
+#### I included comments (the `#`s) to help explain my code. Each line is the same command I ran when completing the tasks without a bash script, except for step 4's `sed -i '43s/.*/      index2 += 1;/' ListExamples.java`, which I had to [research](https://stackoverflow.com/questions/11145270/how-to-replace-an-entire-line-in-a-text-file-by-line-number) specfically to make this script work. Essentially, this command replaces line `43` in `ListExamples.java` with `      index2 += 1;` (extra spaces for consistent indentation). It's important to note that this command works even when completing the tasks without a bash script. Looking back, it would've saved me many, many keystrokes as opposed to using `nano` and manually editing `ListExamples.java`.
 
 #### All you need to do now is run `bash cldq.sh` and sit back and relax: 
 
