@@ -1,5 +1,5 @@
 # Week 9 Lab Report
-#### You read my last lab report on how to get a pretty fast *CSE Labs “Done Quick”* time (hopefully), but you want more. You want it EVEN FASTER. Lucky for you, you're in the right place. This article will show you how to utilize a bash script to complete the tasks in TWO lines (yes, you read that right).
+### You read my last lab report on how to get a pretty fast *CSE Labs “Done Quick”* time (hopefully), but you want more. You want it EVEN FASTER. Lucky for you, you're in the right place. This article will show you how to utilize a bash script to complete the tasks in TWO lines (yes, you read that right).
 
 ## Step 1. "Log into ieng6" the old-fashioned way
 
