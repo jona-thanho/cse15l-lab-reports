@@ -1,6 +1,8 @@
 # Week 9 Lab Report
 #### You read my last lab report on how to get a pretty fast *CSE Labs “Done Quick”* time (hopefully), but you want more. You want it EVEN FASTER. Lucky for you, you're in the right place. This article will show you how to utilize a bash script to complete the tasks in TWO lines (yes, you read that right).
 
+#### Here's the link to the actual website if you want to read anything that is cut off: [https://jona-thanho.github.io/cse15l-lab-reports/week9](https://jona-thanho.github.io/cse15l-lab-reports/week9).
+
 ## Step 1. "Log into ieng6" the old-fashioned way
 
 #### Proceed to logging into the remote as outlined in my previous lab post: use `<ctrl r>` to search for `ssh [your course username]`.
